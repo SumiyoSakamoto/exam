@@ -1,0 +1,143 @@
+<?php
+
+// 左側のマージンを表示する
+function showLeftMargin() {
+	print "<!-- レフトマージン 11モジュール -->\n";
+	for ($i=0;$i<11;$i++)
+		print "<td class=\"white\"></td>\n";
+}
+
+// 右側のマージンを表示する
+function showRightMargin() {
+	print "<!-- ライトマージン 7モジュール -->\n";
+	for ($i=0;$i<7;$i++)
+		print "<td class=\"white\"></td>\n";
+}
+
+// 左右のガードバーを表示する
+function showSideBar() {
+	print "<!-- 左右のガードバー 101 -->\n";
+	print "<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n";
+}
+
+// 中央のバーを表示する
+function showCenterBar() {
+	print "<!-- 中央のバー 01010 -->\n";
+	print "<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n";
+}
+
+// 左側のバーを表示する
+function showLeftBar($number) {
+
+	switch($number) {
+
+	case 0:
+		print "<!-- 0:0001101 -->\n";
+		print "<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n";
+		break;
+	case 1:
+		print "<!-- 1:0011001 -->\n";
+		print "<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n";
+		break;
+	case 2:
+		print "<!-- 2:0010011 -->\n";
+		print "<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n";
+		break;
+	case 3:
+		print "<!-- 3:0111101 -->\n";
+		print "<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n";
+		break;
+	case 4:
+		print "<!-- 4:0100011 -->\n";
+		print "<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n";
+		break;
+	case 5:
+		print "<!-- 5:0110001 -->\n";
+		print "<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n";
+		break;
+	case 6:
+		print "<!-- 6:0101111 -->\n";
+		print "<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n";
+		break;
+	case 7:
+		print "<!-- 7:0111011 -->\n";
+		print "<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n";
+		break;
+	case 8:
+		print "<!-- 8:0110111 -->\n";
+		print "<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n";
+		break;
+	case 9:
+		print "<!-- 9:0001011 -->\n";
+		print "<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n";
+		break;
+	}
+}
+
+// 右側のバーを表示する
+function showRightBar($number) {
+
+	switch($number) {
+
+	case 0:
+		print "<!-- 0:1110010 -->\n";
+		print "<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n";
+		break;
+	case 1:
+		print "<!-- 1:1100110 -->\n";
+		print "<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n";
+		break;
+	case 2:
+		print "<!-- 2:1101100 -->\n";
+		print "<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n";
+		break;
+	case 3:
+		print "<!-- 3:1000010 -->\n";
+		print "<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n";
+		break;
+	case 4:
+		print "<!-- 4:1011100 -->\n";
+		print "<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n";
+		break;
+	case 5:
+		print "<!-- 5:1001110 -->\n";
+		print "<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n";
+		break;
+	case 6:
+		print "<!-- 6:1010000 -->\n";
+		print "<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n";
+		break;
+	case 7:
+		print "<!-- 7:1000100 -->\n";
+		print "<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n";
+		break;
+	case 8:
+		print "<!-- 8:1001000 -->\n";
+		print "<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n";
+		break;
+	case 9:
+		print "<!-- 9:1110100 -->\n";
+		print "<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"black\"></td>\n<td class=\"white\"></td>\n<td class=\"white\"></td>\n";
+		break;
+	}
+}
+
+// チェックキャラクタを確認する
+function getCheckChara($number) {
+
+	$check = 0;
+	// (1)奇数桁を足す
+	for ($i=0;$i<7;$i+=2) {
+		$check += $number[$i];
+	}
+	// 3をかける
+	$check = $check * 3;
+	// (2)偶数桁を足す
+	for ($i=1;$i<7;$i+=2) {
+		$check += $number[$i];
+	}
+	// (3)下1桁を取り出し、10から引いてその1の位を取り出す
+	return (10 - $check % 10) % 10;
+}
+
+?>
